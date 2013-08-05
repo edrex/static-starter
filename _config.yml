@@ -1,4 +1,5 @@
 name: Your New Jekyll Site
+signature: "Yours truly, Grizzly Bear"
 pygments: true
 permalink: pretty
 markdown: redcarpet
