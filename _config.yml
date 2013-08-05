@@ -4,6 +4,10 @@ signature: "Yours truly, Grizzly Bear"
 pygments: true
 permalink: pretty
 markdown: redcarpet
+github:
+  # enables "edit" link
+  repo: 'GRIZZLYBEAR/GRIZZLYBEAR.github.io'
+  branch: master
 prose:
   siteurl: 'http://GRIZZLYBEAR.github.io'
   relativeLinks: 'http://GRIZZLYBEAR.github.io/links.jsonp'

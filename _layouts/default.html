@@ -21,8 +21,24 @@
 
         <div class="container site">
           <div class="page-header">
-            <h1 class="title">{% if page.url != '/' %}<a href="/" title="{{ site.name }}">..</a>{% endif %} {{ page.title }}<div><small class="description">{{ page.description }}</small></div></h1>
-          </div>
+            <div class="pull-right">
+            {% if page.path and site.github.repo and site.github.branch %}
+              <div class="post-edit">
+                <a class="glyphicon glyphicon-edit pull-right" href="http://prose.io/#{{ site.github.repo }}/edit/{{ site.github.branch }}/{{ page.path }}"></a>
+              </div> 
+            {% endif %}
+            {% if page.date %}
+              <div class="page-date pull-right">{{ page.date | date_to_string }}</div>
+            {% endif %}
+            </div>
+            <h1 class="title">{% if page.url != '/' %}<a href="/" title="{{ site.name }}">..</a>{% endif %} {{ page.title }}  <!-- Edit current page -->
+              <div >
+                <small class="description">
+                  {{ page.description }}
+                </small>
+              </div>
+            </h1>
+            </div>
           <div class="content">
             {{ content }}
           </div>
