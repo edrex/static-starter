@@ -1,6 +1,7 @@
 name: Your New Jekyll Site
 pygments: true
 permalink: pretty
+markdown: redcarpet
 prose:
   siteurl: 'http://GRIZZLYBEAR.github.io'
   relativeLinks: 'http://GRIZZLYBEAR.github.io/links.jsonp'
