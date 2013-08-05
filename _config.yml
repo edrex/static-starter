@@ -1,4 +1,5 @@
-name: Your New Jekyll Site
+name: "Doohicky"
+description: "a site about nothing"
 signature: "Yours truly, Grizzly Bear"
 pygments: true
 permalink: pretty
