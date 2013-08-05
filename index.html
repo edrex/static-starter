@@ -3,11 +3,26 @@ layout: default
 title: Your New Jekyll Site
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
+<div id="home" class="row">
+  <div class="col-sm-9">
+    <div class="list-group posts">
     {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+      <a href="{{ post.url }}" class="list-group-item">
+        <h4 class="list-group-item-heading">{{ post.title }}<small class="pull-right">{{ post.date | date_to_string }}</small></h4>
+      {% if post.description %}
+        <p class="list-group-item-text">{{ post.description }}</p>
+      {% endif %}
+      </a>
     {% endfor %}
-  </ul>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="list-group posts">
+    {% for post in site.pages %}{% if post.url != page.url and post.title != null %}
+      <a href="{{ post.url }}" title="{{ post.description }}" class="list-group-item">
+        {{ post.title }}
+      </a>
+    {% endif %}{% endfor %}
+    </div>
+  </div>
 </div>
