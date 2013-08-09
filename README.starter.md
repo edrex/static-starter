@@ -2,12 +2,15 @@
 
  - [Fork](https://github.com/edrex/reusable-jekyll-site/fork)
  - Rename the fork to **YOURNAME.github.io** in project settings to enable Github Pages (wait 10 minutes for the site to show up).
- - Log in to [prose.io](http://prose.io/) and start editing your new site.
+ - Log in to [prose.io](http://prose.io/) and start editing your new site. Customize the values in `_config.yml` and `index.html`.
  
 ## Features:
 
- - Minimal starting point building a site
- - Preconfigured `_config.yml
+ - 3 steps to start building a site
+ - Builtin "edit" link on each page
+ - Media directory configured
+ - links.jsonp, allowing Prose editor's page link browser to work
+ - Preconfigured `_config.yml` for working with Prose.io and template for 
 
 ## FAQs
 
