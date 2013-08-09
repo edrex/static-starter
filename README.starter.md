@@ -22,21 +22,26 @@ Note that this is only a problem in development.
 ### How can I pull in the latest changes from the reusable project?
 
  1. Add my repo as a remote:
- 		```bash
- 	    git remote add reusable git@github.com:edrex/reusable-jekyll-site.git
-        git fetch reusable
-        ```
+ 
+    ```
+    git remote add reusable git@github.com:edrex/reusable-jekyll-site.git
+    git fetch reusable
+    ```
+
  2. Either merge or rebase. In either case there may be merge conflicts in any existing files that you have modified.
-  a. Merge my branch into yours:
- 		```bash
-        git merge reusable/master master
-        git push origin master
-        ```
-  b. Rebase your changes on my branch, destructively overwriting your branch:
- 		```bash
-        git rebase reusable/master master
-        git push -f origin master
-        ```
+   * To merge my branch into yours:
+
+       ```
+       git merge reusable/master master
+       git push origin master
+       ```
+
+   * To rebase your changes on my branch, destructively overwriting your branch:
+ 
+       ```
+       git rebase reusable/master master
+       git push -f origin master
+       ```
 
 ## Need to document:
 
