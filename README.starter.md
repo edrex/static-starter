@@ -1,3 +1,5 @@
+This is a starter project for people making Jekyll sites for hosting in Github Pages and editing with Prose.io
+
 ## Quick start
 
  - [Fork](https://github.com/edrex/reusable-jekyll-site/fork)
