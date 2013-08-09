@@ -7,10 +7,11 @@
 ## Features:
 
  - 3 steps to start building a site
- - Builtin "edit" link on each page
- - Media directory configured
- - links.jsonp, allowing Prose editor's page link browser to work
- - Preconfigured `_config.yml` for working with Prose.io and template for 
+ - Preconfigured to work with Prose.io
+  - Builtin "edit" link on each page
+  - Media browse/upload
+  - links.jsonp for page to easy page linking
+ - Starter template using bootstrap 3, easy to swap out
 
 ## FAQs
 
