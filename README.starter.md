@@ -8,12 +8,12 @@ This is a starter project for people making Jekyll sites for hosting in Github P
  
 ## Features:
 
- - 3 steps to start building a site
- - Preconfigured to work with Prose.io
+ - straightforward way to start building a site
+ - Preconfigured for Prose.io
   - Builtin "edit" link on each page
   - Media browse/upload
   - links.jsonp for page to easy page linking
- - Starter template using bootstrap 3, easy to swap out
+ - Includes a simple layout using Bootstrap 3
 
 ## FAQs
 
@@ -41,15 +41,9 @@ Note that this is only a problem in development.
        git merge reusable/master master
        git push origin master
        ```
-
    * To rebase your changes on my branch, destructively overwriting your branch:
  
        ```
        git rebase reusable/master master
        git push -f origin master
        ```
-
-## Need to document:
-
- - Features
- - Workflow for forking, tracking the starter project
