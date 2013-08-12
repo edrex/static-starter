@@ -18,7 +18,7 @@ This is a starter project for people making Jekyll sites for hosting in Github P
 ## Features:
 
  - Clearly documented
- - Ready for Prose.io
+ - Ready for Prose.io (includes a [links.json](links.json), edit link on each page, and needed _config settings
  - Uses Bootstrap 3
 
 ## FAQs
@@ -31,8 +31,13 @@ To bypass the cache, add a "cache-busting" query string after the URL, like so:
 
     `http://mysite.github.io/my-page?somerandomstring`.
 
-### How can I pull in future improvements after I fork?
+### How do I troubleshoot build failures?
 
+If you have an error in one of your pages or templates, the new version will fail to build and Github will send you an email lacking any detail about what caused the failure. 
+
+To see the error you can [run Jekyll locally](http://jekyllrb.com/docs/quickstart/) on a workstation.
+
+### How can I pull in future improvements after I fork?
 
 You can [merge](http://git-scm.com/book/en/Git-Branching-Basic-Branching-and-Merging) my changes into your branch.
 
