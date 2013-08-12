@@ -29,16 +29,14 @@ Github Pages caches pages for 10 minutes whenever they are accessed. If you make
 
 To bypass the cache, add a "cache-busting" query string after the URL, like so: `http://mysite.github.io/my-page?somerandomstring`.
 
-### How can I keep up with improvements to the reusable project?
+### How can I pull in future improvements after I fork?
 
-If you fork this and use it as a base for your site (fork), and then later want to pull in some new features, you can [merge](http://git-scm.com/book/en/Git-Branching-Basic-Branching-and-Merging) my changes into your branch:
 
- 1. Manually copy the changes to your repo.
- 2. Merge my branch, resolving any merge conflicts
+You can [merge](http://git-scm.com/book/en/Git-Branching-Basic-Branching-and-Merging) my changes into your branch.
 
-For 2, you should have some background in Git. Here are the basic steps, using a local checkout of your repo:
+Here are the basic steps, using a local checkout of your repo:
 
-* Add my repo as a remote:
+* Add me as a remote:
 
   ```
   git remote add reusable git@github.com:edrex/reusable-jekyll-site.git
@@ -51,4 +49,4 @@ For 2, you should have some background in Git. Here are the basic steps, using a
   git merge reusable/master master
   ```
 
-* Alternatively, if you know which commits contain the features you want, [cherry-pick](http://git-scm.com/docs/git-cherry-pick) just those commits
+Alternatively, if you know which commits contain the features you want, you might want to [cherry-pick](http://git-scm.com/docs/git-cherry-pick) just those commits.
