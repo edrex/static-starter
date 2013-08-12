@@ -23,11 +23,13 @@ This is a starter project for people making Jekyll sites for hosting in Github P
 
 ## FAQs
 
-### Why don't my changes show up immediately on the live site?
+### Why don't my edits show up immediately?
 
-Github Pages caches pages for 10 minutes whenever they are accessed. If you make a change while the page is cached, you will still see the old page until the cached page falls out of the cache
+Github Pages caches pages for 10 minutes whenever they are accessed. If you make a change while the page is cached, you will still see the old page until the cached page expires.
 
-To bypass the cache, add a "cache-busting" query string after the URL, like so: `http://mysite.github.io/my-page?somerandomstring`.
+To bypass the cache, add a "cache-busting" query string after the URL, like so: 
+
+    `http://mysite.github.io/my-page?somerandomstring`.
 
 ### How can I pull in future improvements after I fork?
 
