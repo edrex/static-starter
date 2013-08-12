@@ -3,15 +3,23 @@ This is a starter project for people making Jekyll sites for hosting in Github P
 ## Quick start
 
  - [Fork](https://github.com/edrex/reusable-jekyll-site/fork)
- - Rename the fork to **YOURNAME.github.io** in project settings to enable Github Pages (wait 10 minutes for the site to show up).
- - Log in to [prose.io](http://prose.io/) and start editing your new site. Customize the values in `_config.yml` and `index.html`.
- 
+ - Rename the fork to **YOURNAME.github.io** in project settings to enable Github Pages.
+ - Wait 10 minutes for the site to show up.
+ - You can edit your site using [Prose](http://prose.io/) or Github.
+
+## Next steps
+
+ - Customize [_config.yml](_config.yml) and [index.html](index.html).
+ - Check out the docs:
+   - [Jekyll](http://jekyllrb.com/docs/home/)
+   - [Github Pages](https://help.github.com/articles/using-jekyll-with-pages)
+   - [Bootstrap 3](http://getbootstrap.com/)
+
 ## Features:
 
- - straightforward way to start building a site
  - Preconfigured for Prose.io
-  - Builtin "edit" link on each page
-  - Media browse/upload
+  - Each page includes an edit link
+  - Insert and upload images into your posts
   - links.jsonp for page to easy page linking
  - Includes a simple layout using Bootstrap 3
 
