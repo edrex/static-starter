@@ -18,7 +18,7 @@ This is a starter project for people making Jekyll sites for hosting in Github P
 ## Features:
 
  - Clearly documented
- - Ready for Prose.io (includes a [links.json](links.json), edit link on each page, and needed _config settings
+ - Ready for Prose.io (includes a [links.json](links.json), edit link on each page, and various _config settings)
  - Uses Bootstrap 3
 
 ## FAQs
