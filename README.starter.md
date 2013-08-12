@@ -17,41 +17,38 @@ This is a starter project for people making Jekyll sites for hosting in Github P
 
 ## Features:
 
- - Preconfigured for Prose.io
-  - Each page includes an edit link
-  - Insert and upload images into your posts
-  - links.jsonp for page to easy page linking
- - Includes a simple layout using Bootstrap 3
+ - Clearly documented
+ - Ready for Prose.io
+ - Uses Bootstrap 3
 
 ## FAQs
 
 ### Why don't my changes show up immediately on the live site?
 
-Github Pages uses a Varnish cache with a 10 minute expiration. When you access a page which isn't cached, the latest version will be rendered and cached. If you make a change in the following 10 minutes, you will continue to see the old version until the cache expires. 
+Github Pages caches pages for 10 minutes whenever they are accessed. If you make a change while the page is cached, you will still see the old page until the cached page falls out of the cache
 
-You can get around this when you are editing by adding a cache-busting query string after the URL. For example, `http://mysite.github.io/my-page?somerandomstring`. You will need to rotate the random string each time you access the page.
+To bypass the cache, add a "cache-busting" query string after the URL, like so: `http://mysite.github.io/my-page?somerandomstring`.
 
-Note that this is only a problem in development.
+### How can I keep up with improvements to the reusable project?
 
-### How can I pull in the latest changes from the reusable project?
+If you fork this and use it as a base for your site (fork), and then later want to pull in some new features, you can [merge](http://git-scm.com/book/en/Git-Branching-Basic-Branching-and-Merging) my changes into your branch:
 
- 1. Add my repo as a remote:
- 
-    ```
-    git remote add reusable git@github.com:edrex/reusable-jekyll-site.git
-    git fetch reusable
-    ```
+ 1. Manually copy the changes to your repo.
+ 2. Merge my branch, resolving any merge conflicts
 
- 2. Either merge or rebase. In either case there may be merge conflicts in any existing files that you have modified.
-   * To merge my branch into yours:
+For 2, you should have some background in Git. Here are the basic steps, using a local checkout of your repo:
 
-       ```
-       git merge reusable/master master
-       git push origin master
-       ```
-   * To rebase your changes on my branch, destructively overwriting your branch:
- 
-       ```
-       git rebase reusable/master master
-       git push -f origin master
-       ```
+* Add my repo as a remote:
+
+  ```
+  git remote add reusable git@github.com:edrex/reusable-jekyll-site.git
+  git fetch reusable
+  ```
+
+* Merge, resolving conflicts as needed:
+  
+  ```
+  git merge reusable/master master
+  ```
+
+* Alternatively, if you know which commits contain the features you want, [cherry-pick](http://git-scm.com/docs/git-cherry-pick) just those commits
