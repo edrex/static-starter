@@ -2,10 +2,10 @@ This is a starter project for people making Jekyll sites for hosting in Github P
 
 ## Quick start
 
- - [Fork](https://github.com/edrex/reusable-jekyll-site/fork)
+ - [Fork me](https://github.com/edrex/reusable-jekyll-site/fork).
  - Rename the fork to **YOURNAME.github.io** in project settings to enable Github Pages.
  - Wait 10 minutes for the site to show up.
- - You can edit your site using [Prose](http://prose.io/) or Github.
+ - Edit your site using [Prose](http://prose.io/) or Github.
 
 ## Next steps
 
