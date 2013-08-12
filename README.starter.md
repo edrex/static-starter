@@ -1,4 +1,4 @@
-This is a starter project for people making Jekyll sites for hosting in Github Pages and editing with Prose.io. See it in action on [my homepage](http://edrex.github.io)
+This is a starter project for people making Jekyll sites for hosting in Github Pages and editing with Prose.io. See it in action on [French Pressicus Technicalus](http://edrex.github.io).
 
 ## Quick start
 
