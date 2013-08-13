@@ -14,8 +14,9 @@ This is a starter project for people making Jekyll sites for hosting in Github P
  - Wait 10 minutes for the site to show up.
  - Edit your site using [Prose](http://prose.io/) or Github. Start with [_config.yml](_config.yml) and [index.html](index.html).
 
-## Documentation
+## Recommended Documentation
 
+   - [Getting Started with Prose](https://github.com/prose/prose/wiki/Getting-Started)
    - [Jekyll](http://jekyllrb.com/docs/home/), [Liquid](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers)
    - [Github Pages](https://help.github.com/articles/using-jekyll-with-pages)
    - [Bootstrap 3](http://getbootstrap.com/)
