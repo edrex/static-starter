@@ -11,4 +11,34 @@ github:
 prose:
   siteurl: 'http://GRIZZLYBEAR.github.io'
   relativeLinks: 'http://GRIZZLYBEAR.github.io/links.jsonp'
+  # uncomment to limit editing to the _posts directory
+  #rooturl: '_posts'
   media: 'media'
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "Add Tags"
+          placeholder: "Choose Tags"
+          options:
+            - name: "Honey"
+              value: "honey"
+            - name: "Salmon"
+              value: "salmon"
+            - name: "Huckleberries"
+              value: "huckleberries"
+    _posts/static:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "page"
+      - name: "permalink"
+        field:
+          element: "text"
+          label: "Permalink"
+          value: ""
