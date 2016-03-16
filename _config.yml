@@ -1,7 +1,7 @@
 name: "Doohicky"
 description: "a site about nothing"
 signature: "Yours truly, Grizzly Bear"
-pygments: true
+highlighter: rouge
 permalink: pretty
 markdown: kramdown
 github:
