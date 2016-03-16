@@ -3,7 +3,7 @@ description: "a site about nothing"
 signature: "Yours truly, Grizzly Bear"
 pygments: true
 permalink: pretty
-markdown: redcarpet
+markdown: kramdown
 github:
   # enables "edit" link
   repo: 'GRIZZLYBEAR/GRIZZLYBEAR.github.io'
