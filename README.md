@@ -37,7 +37,13 @@ If you have an error in one of your pages or templates, the new version will fai
 
 To see the error you can [run Jekyll locally](http://jekyllrb.com/docs/quickstart/) on a workstation.
 
+### How can I enable SSL on Github Pages with a custom domain?
+
+Front Github pages with a free Cloudflare account, as detailed in [this article](https://www.benburwell.com/posts/configuring-cloudflare-universal-ssl/).
+
 ### How can I pull in future improvements after I fork?
+
+**Warning:** You might end up with merge conflicts once you've customized your site, which you'll have to resolve manually.
 
 You can [merge](http://git-scm.com/book/en/Git-Branching-Basic-Branching-and-Merging) my changes into your branch.
 
