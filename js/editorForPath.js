@@ -4,6 +4,8 @@
 
 Given a site path, suggest a source repo path
 
+> sourcePath('/2099/12/31/foo')
+'_posts/2099-12-31-foo.md'
 > sourcePath('/foo/')
 'foo/index.md'
 > sourcePath('/foo.html')
@@ -11,10 +13,13 @@ Given a site path, suggest a source repo path
 > sourcePath('/foo/bar')
 'foo/bar.md'
 > sourcePath('/foo.bar')
-'foo.bar' */
+'foo.bar' y*/
 function sourcePath(path) {
   path = path.substring(1)
   var m
+  if (m = path.match(/^([\d]{4})\/([\d]{2})\/([\d]{2})\/([^\.\/]+)$/)) {
+    return '_posts/'+m[1]+'-'+m[2]+'-'+m[3]+'-'+m[4]+'.md'
+  }
   if (m = path.match(/^(.*)\/$/)) {
     return m[1] + '/index.md'
   }
