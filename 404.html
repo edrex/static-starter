@@ -1,0 +1,11 @@
+---
+permalink: /404.html
+---
+<script src="/js/editorForPath.js"></script>
+<script>
+  var path = window.location.pathname
+  var repo = '{{site.github.repo}}'
+  var branch = '{{site.github.branch}}'
+
+  window.location.href = editorForPath(window.location.pathname, repo, branch)
+</script>

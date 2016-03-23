@@ -4,13 +4,24 @@ signature: "Yours truly, Grizzly Bear"
 highlighter: rouge
 permalink: pretty
 markdown: kramdown
+# enables "edit" link
 github:
-  # enables "edit" link
-  repo: 'GRIZZLYBEAR/GRIZZLYBEAR.github.io'
-  branch: master
+  # example for a user or organization site
+  # repo: 'GRIZZLYBEAR/GRIZZLYBEAR.github.io'
+  # branch: master
+
+  # example for a project site
+  repo: 'edrex/reusable-jekyll-site'
+  branch: gh-pages
 prose:
-  siteurl: 'http://GRIZZLYBEAR.github.io'
-  relativeLinks: 'http://GRIZZLYBEAR.github.io/links.jsonp'
+  # needed for prose preview feature
+  # siteurl: 'http://GRIZZLYBEAR.github.io'
+  # needed for prose "insert page link" feature
+  # relativeLinks: 'http://GRIZZLYBEAR.github.io/links.jsonp'
+  
+  siteurl: 'http://reusable-jekyll-site.pdxhub.org'
+  relativeLinks: 'http://reusable-jekyll-site.pdxhub.org/links.jsonp'
+  
   # uncomment to limit editing to the _posts directory
   #rooturl: '_posts'
   media: 'media'
