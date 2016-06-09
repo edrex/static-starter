@@ -4,15 +4,18 @@ signature: "Yours truly, Grizzly Bear"
 highlighter: rouge
 permalink: pretty
 markdown: kramdown
-# enables "edit" link
+baseurl: '/'
+# enables "edit" and "create page" links
 github:
   # example for a user or organization site
-  # repo: 'GRIZZLYBEAR/GRIZZLYBEAR.github.io'
+  # name: 'GRIZZLYBEAR'
+  # project 'GRIZZLYBEAR.github.io'
   # branch: master
 
   # example for a project site
-  repo: 'edrex/reusable-jekyll-site'
-  branch: gh-pages
+  name: 'edrex'
+  project: 'reusable-jekyll-site'
+  branch: 'gh-pages'
 prose:
   # needed for prose preview feature
   # siteurl: 'http://GRIZZLYBEAR.github.io'

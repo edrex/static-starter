@@ -1,19 +1,17 @@
 // https://github.com/davidchambers/doctest
 
 /* sourcePath :: string -> string
-
-Given a site path, suggest a source repo path
-
-> sourcePath('/2099/12/31/foo')
-'_posts/2099-12-31-foo.md'
-> sourcePath('/foo/')
-'foo/index.md'
-> sourcePath('/foo.html')
-'foo.md'
-> sourcePath('/foo/bar')
-'foo/bar.md'
-> sourcePath('/foo.bar')
-'foo.bar' y*/
+ Given a site path, suggest a source repo path
+ > sourcePath('/2099/12/31/foo')
+ '_posts/2099-12-31-foo.md'
+ > sourcePath('/foo/')
+ 'foo/index.md'
+ > sourcePath('/foo.html')
+ 'foo.md'
+ > sourcePath('/foo/bar')
+ 'foo/bar.md'
+ > sourcePath('/foo.bar')
+ 'foo.bar' y*/
 function sourcePath(path) {
   path = path.substring(1)
   var m
@@ -32,7 +30,6 @@ function sourcePath(path) {
   return path
 }
 
-function editorForPath(path, repo, branch) {
-  return 'http://prose.io/#'+repo+'/edit/'+branch+'/'+sourcePath(path)
-  // return 'https://github.com/'+repo+'/new/'+branch+'?filename='+encodeURIComponent(sourcePath(path))
+function createUrl(path, name, project, branch) {
+  return 'http://prose.io/#'+name+'/'+project+'/new/'+branch+'/'+sourcePath(path)
 }

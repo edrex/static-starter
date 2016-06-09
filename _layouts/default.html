@@ -22,10 +22,10 @@
         <div class="container site">
           <div class="page-header">
             <div class="pull-right">
-            {% if page.path and site.github.repo and site.github.branch %}
+            {% if page.path and site.github.name and site.github.project and site.github.branch %}
               <div class="post-edit">
-                <a class="glyphicon glyphicon-edit pull-right" href="http://prose.io/#{{ site.github.repo }}/edit/{{ site.github.branch }}/{{ page.path }}"></a>
-              </div> 
+                <a class="glyphicon glyphicon-edit pull-right" href="http://prose.io/#{{ site.github.name }}/{{ site.github.project }}/edit/{{ site.github.branch }}/{{ page.path }}"></a>
+              </div>
             {% endif %}
             {% if page.date %}
               <div class="page-date pull-right">{{ page.date | date_to_string }}</div>
