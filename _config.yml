@@ -2,7 +2,8 @@ name: "Doohicky"
 description: "a site about nothing"
 signature: "Yours truly, Grizzly Bear"
 highlighter: rouge
-permalink: pretty
+# drop the extension when generating permalinks, for redirect_from and indexes
+permalink: "/:categories/:year/:month/:day"
 markdown: kramdown
 baseurl: '/'
 # enables "edit" and "create page" links
