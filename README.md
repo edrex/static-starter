@@ -14,9 +14,9 @@ A smart and small starter kit for building a Jekyll website to host on Github Pa
  1. Fork this repo.
  2. Rename the fork to **YOURNAME.github.io** in project settings to enable Github Pages.
  3. Delete the [CNAME](CNAME) file.
-    - At this point your new site should be up!
- 5. Read through [_config.yml](_config.yml) and customize the name, description, etc.
- 
+
+At this point your new site should be up! Now go through [_config.yml](_config.yml) and customize the name, description, etc.
+
 ## References
 
    - [Jekyll](http://jekyllrb.com/docs/home/)
