@@ -15,7 +15,9 @@ A smart and small starter kit for building a Jekyll website to host on Github Pa
  2. Rename the fork to **YOURNAME.github.io** in project settings to enable Github Pages.
  3. Delete the [CNAME](CNAME) file.
 
-At this point your new site should be up! Now go through [_config.yml](_config.yml) and customize the name, description, etc.
+At this point your new site should be up!
+
+To finish, go through [_config.yml](_config.yml) and customize the name, description, etc.
 
 ## References
 
@@ -52,23 +54,4 @@ Front Github pages with a free Cloudflare account, as detailed in [this article]
 
 ### How can I pull in future improvements after I fork?
 
-**Warning:** You might end up with merge conflicts once you've customized your site, which you'll have to resolve manually.
-
-You can [merge](http://git-scm.com/book/en/Git-Branching-Basic-Branching-and-Merging) my changes into your branch.
-
-Here are the basic steps, using a local checkout of your repo:
-
-* Add me as a remote:
-
-  ```
-  git remote add reusable git@github.com:edrex/reusable-jekyll-site.git
-  git fetch reusable
-  ```
-
-* Merge, resolving conflicts as needed:
-  
-  ```
-  git merge reusable/master master
-  ```
-
-Alternatively, if you know which commits contain the features you want, you might want to [cherry-pick](http://git-scm.com/docs/git-cherry-pick) just those commits.
+Probably the most reliable way is to manually copy any new bits you want. If you're comfortable with [`git merge`](http://git-scm.com/book/en/Git-Branching-Basic-Branching-and-Merging) or [`git cherry-pick`](http://git-scm.com/docs/git-cherry-pick), you can use these and then fix any merge conflicts by hand.
