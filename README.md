@@ -1,28 +1,37 @@
-This is a starter project for people making Jekyll sites for hosting in Github Pages and editing with Prose.io.
+A smart and small starter for building a Jekyll website to host on Github Pages. It's less about themes and such and more about providing smart, well-documented default configuration. Features:
 
-## Features:
-
- - Clearly documented
- - Ready for Prose.io (includes a [links.json](links.json), edit link on each page, and various _config settings)
- - Uses Bootstrap 3
- - Uses [Redcarpet](https://github.com/vmg/redcarpet), the same markdown renderer as Github. **TODO:** Document GFM features in demo page.
+ - Links to "edit this page" in [Prose.io](http://prose.io) or Github. Anyone can suggest a change, which you will see as a pull request. 
  - Links to "create this page" on the "404 Not Found" page, which enables **wiki-style linking**!
+ - [Pre-configured](https://github.com/prose/prose/wiki/Prose-Configuration) for prose:
+   - Browse/search pages when creating a link ([links.jsonp](links.jsonp))
+   - Browse/upload media from the post editor (`media` key in [_config.yml](_config.yml))
+   - Sample [metadata fields](https://github.com/prose/prose/wiki/Prose-Configuration#metadata-configuration) for post tagging etc.
+ - Bootstrap. Remove it if you like.
 
 ## Quick start
 
- - [Fork me](https://github.com/edrex/reusable-jekyll-site/fork).
+ - Fork this repo.
  - Rename the fork to **YOURNAME.github.io** in project settings to enable Github Pages.
- - Wait 10 minutes for the site to show up.
- - Edit your site using [Prose](http://prose.io/) or Github. Start with [_config.yml](_config.yml) and [index.html](index.html).
+ - Delete the [CNAME](CNAME) file.
+ - Verify that your new site is up.
+ - Read through [_config.yml](_config.yml) and customize the name, description, etc.
+ 
+## Reference
 
-## Recommended Documentation
-
-   - [Getting Started with Prose](https://github.com/prose/prose/wiki/Getting-Started)
-   - [Jekyll](http://jekyllrb.com/docs/home/), [Liquid](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers)
+   - [Jekyll](http://jekyllrb.com/docs/home/)
+   - [Liquid](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers)
+   - [Kramdown](http://kramdown.gettalong.org/converter/html.html)
    - [Github Pages](https://help.github.com/articles/using-jekyll-with-pages)
+   - [Prose](https://github.com/prose/prose/wiki/Getting-Started)
    - [Bootstrap 3](http://getbootstrap.com/)
 
 ## FAQs
+
+### Why are there two branches, master and gh-pages?
+
+Github pages uses the master branch if you name your project **YOURNAME.github.io**. Otherwise, it uses the **gh-pages** branch, and serves your site at **YOURNAME.github.io/PROJECTNAME`. I keep both branches up to date so you can use it either way without creating a branch.
+
+You will have to remove CNAME though, see [Quick start](#Quick start).
 
 ### Why don't my edits show up immediately?
 
