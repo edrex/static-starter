@@ -11,7 +11,6 @@
 
         <!-- Loading Bootstrap -->
         <link href="/css/bootstrap3.css" rel="stylesheet">
-        <link href="/css/bootstrap-glyphicons.css" rel="stylesheet">
 
         <!-- Custom CSS -->
         <link rel="stylesheet" href="/css/site.css">
@@ -21,28 +20,26 @@
 
         <div class="container site">
           <div class="page-header">
-            <div class="pull-right">
-            {% if page.path and site.github.name and site.github.project and site.github.branch %}
-              <div class="post-edit">
-                <a class="glyphicon glyphicon-edit pull-right" href="http://prose.io/#{{ site.github.name }}/{{ site.github.project }}/edit/{{ site.github.branch }}/{{ page.path }}"></a>
-              </div>
-            {% endif %}
-            {% if page.date %}
-              <div class="page-date pull-right">{{ page.date | date_to_string }}</div>
-            {% endif %}
-            </div>
-            <h1 class="title">{% if page.url != '/' %}<a href="/" title="{{ site.name }}">..</a>{% endif %} {{ page.title }}  <!-- Edit current page -->
-              <div >
-                <small class="description">
-                  {{ page.description }}
-                </small>
-              </div>
+            <h1 class="title">
+              {% if page.url != '/' %}
+              <a href="/">{{ site.name }}</a>
+              {% else %}
+                {{ site.name }}
+              {% endif %}
             </h1>
             </div>
           <div class="content">
             {{ content }}
+            {% if page.date %}
+            <div class="page-date">{{ page.date | date_to_string }}</div>
+            {% endif %}
+            {% if page.path and site.github.name and site.github.project and site.github.branch %}
+            <div class="post-edit">
+              <a class="post-edit--prose" href="http://prose.io/#{{ site.github.name }}/{{ site.github.project }}/edit/{{ site.github.branch }}/{{ page.path }}">Edit page in Prose</a> or <a class="post-edit--github" href="https://github.com/{{ site.github.name }}/{{ site.github.project }}/edit/{{ site.github.branch }}/{{ page.path }}">in Github</a>
+            </div>
+            {% endif %}
+
           </div>
-          {{ if site.signature }}<i class="pull-right">{{ site.signature }}</i>{{ endif }}
         </div> <!-- /container -->
 
     </body>
