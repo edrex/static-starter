@@ -1,22 +1,23 @@
-A smart and small starter for building a Jekyll website to host on Github Pages. It's less about themes and such and more about providing smart, well-documented default configuration. Features:
+A smart and small starter kit for building a Jekyll website to host on Github Pages. It's less about themes and more about providing solid defaults and editing workflows:
 
- - Links to "edit this page" in [Prose.io](http://prose.io) or Github. Anyone can suggest a change, which you will see as a pull request. 
- - Links to "create this page" on the "404 Not Found" page, which enables **wiki-style linking**!
- - [Pre-configured](https://github.com/prose/prose/wiki/Prose-Configuration) for prose:
-   - Browse/search pages when creating a link ([links.jsonp](links.jsonp))
+ - Wiki-style editing using [Prose](http://prose.io#edrex/reusable-jekyll-site/edit/master/README.md) or Github (user choice)
+   - **Edit this page** from any page.
+   - **Create this page** from the *404 Not Found* page.
+ - [Pre-configured](https://github.com/prose/prose/wiki/Prose-Configuration) for Prose:
+   - Browse/search pages when creating a link, via [links.jsonp](links.jsonp)
    - Browse/upload media from the post editor (`media` key in [_config.yml](_config.yml))
    - Sample [metadata fields](https://github.com/prose/prose/wiki/Prose-Configuration#metadata-configuration) for post tagging etc.
  - Bootstrap. Remove it if you like.
 
 ## Quick start
 
- - Fork this repo.
- - Rename the fork to **YOURNAME.github.io** in project settings to enable Github Pages.
- - Delete the [CNAME](CNAME) file.
- - Verify that your new site is up.
- - Read through [_config.yml](_config.yml) and customize the name, description, etc.
+ 1. Fork this repo.
+ 2. Rename the fork to **YOURNAME.github.io** in project settings to enable Github Pages.
+ 3. Delete the [CNAME](CNAME) file.
+    - At this point your new site should be up!
+ 5. Read through [_config.yml](_config.yml) and customize the name, description, etc.
  
-## Reference
+## References
 
    - [Jekyll](http://jekyllrb.com/docs/home/)
    - [Liquid](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers)
