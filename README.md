@@ -1,8 +1,9 @@
-A smart and small starter kit for building a Jekyll website to host on Github Pages. It's less about themes and more about providing solid defaults and editing workflows:
+A smart and small starter kit for building a Jekyll website to host on Github Pages:
 
- - Wiki-style editing using [Prose](http://prose.io#edrex/reusable-jekyll-site/edit/master/README.md) or Github (user choice)
-   - **Edit this page** from any page.
-   - **Create this page** from the *404 Not Found* page.
+ - Wiki-style editing workflow:
+   - **Edit** from the footer of [every page](http://reusable-jekyll-site.pdxhub.org/2013/07/03).
+   - **Create** from the [Page Not Found](http://reusable-jekyll-site.pdxhub.org/foo-bar) page. This allows wiki-style *dangling-link page creation*.
+   - Users' choice of editors: [Prose](http://prose.io#edrex/reusable-jekyll-site/edit/master/README.md) or Github.
  - [Pre-configured](https://github.com/prose/prose/wiki/Prose-Configuration) for Prose:
    - Browse/search pages when creating a link, via [links.jsonp](links.jsonp)
    - Browse/upload media from the post editor (`media` key in [_config.yml](_config.yml))
