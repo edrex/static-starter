@@ -30,9 +30,7 @@ A smart and small starter kit for building a Jekyll website to host on Github Pa
 
 ### Why are there two branches, master and gh-pages?
 
-Github pages uses the master branch if you name your project **YOURNAME.github.io**. Otherwise, it uses the **gh-pages** branch, and serves your site at **YOURNAME.github.io/PROJECTNAME`. I keep both branches up to date so you can use it either way without creating a branch.
-
-You will have to remove CNAME though, see [Quick start](#Quick start).
+Github pages uses the `master` branch if you name your project `YOURNAME.github.io`. Otherwise, it uses the `gh-pages` branch, and serves your site at `YOURNAME.github.io/PROJECTNAME`. I keep both branches up to date so you can use it either way without creating a branch. After you fork, you can delete the unused branch to avoid confusion.
 
 ### Why don't my edits show up immediately?
 
