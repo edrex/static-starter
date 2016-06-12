@@ -18,11 +18,10 @@ github:
   name: 'edrex'
   project: 'reusable-jekyll-site'
   branch: 'gh-pages'
-# uncomment these to enable them individually
 # https://help.github.com/articles/adding-jekyll-plugins-to-a-github-pages-site/
 gems:
-#   - jekyll-gist
-#   - jekyll-redirect-from
+  - jekyll-sitemap
+  - jekyll-redirect-from
 defaults:
   -
     scope:
