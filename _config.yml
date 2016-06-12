@@ -26,25 +26,45 @@ defaults:
   -
     scope:
       path: "" # an empty string here means all files in the project
-      type: "posts"
     values:
       layout: "default"
   -
     scope:
-      path: "_posts" # an empty string here means all files in the project
+      path: "_posts"
       type: "posts"
     values:
       layout: "post"
 prose:
+  siteurl: http://reusable-jekyll-site.pdxhub.org
   # needed for prose "insert page link" feature
   # relativeLinks: 'http://GRIZZLYBEAR.github.io/links.jsonp'
   relativeLinks: 'http://reusable-jekyll-site.pdxhub.org/links.jsonp'
-  
   # uncomment to limit editing to the _posts directory
   #rooturl: '_posts'
   media: 'media'
   metadata:
+    "":
+      - name: permalink
+        field:
+          label: Permalink
+          element: "text"
+          help: override the default path
+      - name: redirect_from
+        field:
+          label: Redirect from
+          element: "text"
+          help: redirect from this path to the current page
+      - name: redirect_to
+        field:
+          label: Redirect to
+          element: "text"
+          help: redirect the current page to this URL
     _posts:
+      - name: description
+        field:
+          label: Description
+          element: "text"
+          help: Displayed in the post listing
       - name: "tags"
         field:
           element: "multiselect"
@@ -57,8 +77,3 @@ prose:
               value: "salmon"
             - name: "Huckleberries"
               value: "huckleberries"
-      - name: "permalink"
-        field:
-          element: "text"
-          label: "Permalink"
-          value: ""

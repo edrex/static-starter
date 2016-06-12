@@ -1,18 +1,11 @@
 ---
-layout: post
-title: Default post
+title: Welcome!
 published: true
-tags: null
+description: This is the demo post that comes with your site. You can delete it, or rename it.
 ---
 
+Welcome to your new website!
 
-## [Markdown](http://daringfireball.net/projects/markdown/)!
-
-## Dangling links
-
- - [/foo](/foo)
- - [/2088/12/31/party!](/2088/12/31/party!)
- - [/foo.html](/foo.html)
- - [/foo.txt](foo.txt)
+You can delete this post, or rename it to create your first post.
 
 ![Sheeps!](/media/starter-baby-sheep.jpg)
